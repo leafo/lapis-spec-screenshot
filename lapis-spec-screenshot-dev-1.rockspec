@@ -19,7 +19,7 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-		["lapis.spec.screenshot"] = "lapis/spec/screenshot.lua",
+    ["lapis.spec.screenshot"] = "lapis/spec/screenshot.lua",
   }
 }
 
