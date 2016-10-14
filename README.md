@@ -1,10 +1,11 @@
 
 # lapis-spec-screenshot
 
-`lapis-spec-screenshot` provides a busted output handler that, in addition to
-rendering the normal output, listens for special Lapis request events. Upon
-being notified, it will use the tool `wkhtmltoimage` to screenshot the running
-attached spec server at the specified URL.
+`lapis-spec-screenshot` provides a
+[busted](https://github.com/Olivine-Labs/busted) output handler that, in
+addition to rendering the normal output, listens for special Lapis `screenshot`
+events. Upon being notified, it will use `wkhtmltoimage` to screenshot the
+current spec server at the specified URL.
 
 This tool can be used to help discover visual regressions on your webpage by
 giving you screenshots for each test request to view. (Further automation can
@@ -16,7 +17,7 @@ be done as you see fit)
 ## Install
 
 ```bash
-luarocks install 
+luarocks install
 ```
 
 ## Usage
